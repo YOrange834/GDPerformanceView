@@ -290,7 +290,7 @@
     CGFloat windowHeight = CGRectGetHeight(self.bounds);
     CGSize labelSize = [self.monitoringTextLabel sizeThatFits:CGSizeMake(windowWidth, windowHeight)];
     
-    [self.monitoringTextLabel setFrame:CGRectMake((windowWidth - labelSize.width) / 2.0f, (windowHeight - labelSize.height) / 2.0f, labelSize.width, labelSize.height)];
+    [self.monitoringTextLabel setFrame:CGRectMake((windowWidth - labelSize.width) / 2.0f, (windowHeight - labelSize.height) / 2.0f + 100, labelSize.width, labelSize.height)];
 }
 
 - (void)layoutWindow {
