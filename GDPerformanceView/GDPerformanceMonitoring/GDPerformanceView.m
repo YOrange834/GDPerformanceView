@@ -265,7 +265,7 @@
     CGRect frame = CGRectZero;
     UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
     if (window) {
-        frame = CGRectMake(0.0f, 0.0f, CGRectGetWidth(window.bounds), 20.0f);
+        frame = CGRectMake(0.0f, 100.0f, CGRectGetWidth(window.bounds), 20.0f);
     }
     return frame;
 }
@@ -290,7 +290,7 @@
     CGFloat windowHeight = CGRectGetHeight(self.bounds);
     CGSize labelSize = [self.monitoringTextLabel sizeThatFits:CGSizeMake(windowWidth, windowHeight)];
     
-    [self.monitoringTextLabel setFrame:CGRectMake((windowWidth - labelSize.width) / 2.0f, (windowHeight - labelSize.height) / 2.0f + 100, labelSize.width, labelSize.height)];
+    [self.monitoringTextLabel setFrame:CGRectMake((windowWidth - labelSize.width) / 2.0f, (windowHeight - labelSize.height) / 2.0f, labelSize.width, labelSize.height)];
 }
 
 - (void)layoutWindow {
